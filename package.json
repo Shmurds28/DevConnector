@@ -4,11 +4,15 @@
   "description": "Social network for developers",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "node server.js",
     "server": "nodemon server",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
+  "engines": {
+    "node": "14.16.1"
+},
   "author": "Simamkele Ngcasane",
   "license": "ISC",
   "dependencies": {
@@ -24,5 +28,7 @@
   "devDependencies": {
     "concurrently": "^6.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "proxy": "http://localhost:8000"
+  
 }
