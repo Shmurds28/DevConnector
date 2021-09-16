@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://Shmurds:shmurds@devconnector.5dxa2.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken",
+    "githubClientId": "2f81046350c03f0163b8",
+    "githubSecret": "91c8c3e81192767a99645bf0ef3a4c8dd4736d8f"
+}
